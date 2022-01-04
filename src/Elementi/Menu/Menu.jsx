@@ -15,7 +15,6 @@ class Menu extends React.Component{
     componentDidMount(){ 
         var list1=[];
         list1=document.querySelectorAll('.list');
-        console.log(list1);
         list1.forEach((item)=>item.addEventListener('click',this.activeLink));
     }
     activeLink(){
@@ -35,7 +34,7 @@ class Menu extends React.Component{
                             <span className='icon'>
                                 <IoMdHome/>
                             </span>
-                            <span className='text'>Poctna</span>
+                            <span className='text'>Pocetna</span>
                             </Link>
                         </li>
                         <li className="list">
@@ -63,6 +62,21 @@ class Menu extends React.Component{
                             </Link>
                         </li>
                     </ul>
+                    <section id='sekcija1'>
+                        <div id='titleBox'>
+                            <div id='textBox'>
+                                <div className='text1'>
+                                    <h2>Stranica</h2>
+                                </div>
+                                <div className='text1'>
+                                    <h2>slika</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id='mesto'>
+
+                    </div>
                 </nav>
                 <Routes>
                     <Route exact path="/" element={<Pocetna/>}/>

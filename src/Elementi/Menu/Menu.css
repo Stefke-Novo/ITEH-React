@@ -5,9 +5,13 @@
 }
 nav{
     display: flex;
-    border:2px solid black;
     height: 100px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
 }
 ul{
     list-style: none;
@@ -68,4 +72,53 @@ a{
 .active .text{
     opacity: 1;
     transform: translateY(30px);
+}
+#sekcija1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+#titleBox{
+    width:100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+#textBox{
+    width:100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+#textBox .text1{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+#textBox .text1:nth-child(2){
+    transform: rotateY(180deg);
+}
+#textBox .text1 h2{
+    font-size: 70px;
+}
+#mesto{
+    width:30%;
 }
