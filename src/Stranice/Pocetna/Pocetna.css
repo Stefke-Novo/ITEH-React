@@ -20,7 +20,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding-top: 25%;
+    padding-top: 400px;
     background-attachment: fixed;
     clip-path: circle(220vh at 50% -80vh);
 }

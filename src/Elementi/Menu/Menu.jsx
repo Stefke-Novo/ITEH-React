@@ -46,14 +46,6 @@ class Menu extends React.Component{
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to="/novosti">
-                            <span className='icon'>
-                                <IoMdPaper/>
-                            </span>
-                            <span className='text'>Novosti</span>
-                            </Link>
-                        </li>
-                        <li className="list">
                             <Link to="/kontakt">
                             <span className='icon'>
                                 <IoIosCall/>
@@ -81,7 +73,6 @@ class Menu extends React.Component{
                 <Routes>
                     <Route exact path="/" element={<Pocetna/>}/>
                     <Route exact path="/kategorije" element={<Slike/>}/>
-                    <Route exact path="/novosti" element={<Novosti/>}/>
                     <Route exact path="/kontakt" element={<Kontakt/>}/>
                 </Routes>
             </Router>
