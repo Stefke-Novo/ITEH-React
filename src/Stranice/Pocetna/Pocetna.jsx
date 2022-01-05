@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import './Pocetna.css';
 import Kartica from "./../../Elementi/Kartica/Kartica";
 function Pocetna() {
-    const [kartice,promeniKrtice] = useState([
+    const [kartice] = useState([
         {
             key:1,
             slika:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -54,9 +54,11 @@ function Pocetna() {
     ]); 
     return (
         <div id='pocetna'>
-            <div id="pocetna1">
-                <h1>Pocetna</h1>
-            </div>
+            <section id='sekcija'>
+                <div id='sadrzaj'>
+                    <h1>Naslov stranice</h1>
+                </div>
+            </section>
             <div id='container'>
                 {kartice.map((kartica)=>{
                     return(

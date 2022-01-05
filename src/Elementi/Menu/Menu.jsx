@@ -8,7 +8,7 @@ import {BrowserRouter as Router,
 import { IoMdHome ,IoMdPaper,IoIosCall} from "react-icons/io";
 import Pocetna from "./../../Stranice/Pocetna/Pocetna";
 import Kontakt from "./../../Stranice/Kontakt/Kontakt";
-import Kategorije from "./../../Stranice/Kategorije/Kategorije";
+import Slike from "./../../Stranice/Slike/Slike";
 import Novosti from "./../../Stranice/Novosti/Novosti";
 class Menu extends React.Component{
     //koristi se ComponentDidMount() funkcija - class komponenta je (napokon)
@@ -42,7 +42,7 @@ class Menu extends React.Component{
                             <span className='icon'>
                                 <IoIosApps/>
                             </span>
-                            <span className='text'>Kategorije</span>
+                            <span className='text'>Slike</span>
                             </Link>
                         </li>
                         <li className="list">
@@ -80,7 +80,7 @@ class Menu extends React.Component{
                 </nav>
                 <Routes>
                     <Route exact path="/" element={<Pocetna/>}/>
-                    <Route exact path="/kategorije" element={<Kategorije/>}/>
+                    <Route exact path="/kategorije" element={<Slike/>}/>
                     <Route exact path="/novosti" element={<Novosti/>}/>
                     <Route exact path="/kontakt" element={<Kontakt/>}/>
                 </Routes>

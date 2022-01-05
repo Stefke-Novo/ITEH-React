@@ -9,7 +9,7 @@ function Kartica({slika,naslov,opis}) {
             <div className='content'>
                 <h2>{naslov}</h2>
                 <p>{opis}</p>
-                <a href="#">Procitaj vise</a>
+                <a href="https://unsplash.com/">Procitaj vise</a>
             </div>
         </div>
     )
